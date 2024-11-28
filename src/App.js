@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ProductMatch from './ProductMatch'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <React.Fragment>
+      <header style={{ textAlign: 'center', padding: '10px', backgroundColor: '#f8f9fa' }}>
+        <h1>Product Match App</h1>
       </header>
-    </div>
+      <main style={{ padding: '20px' }}>
+        <ProductMatch />
+      </main>
+    </React.Fragment>
   );
 }
 
